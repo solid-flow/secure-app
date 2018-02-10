@@ -5,6 +5,10 @@ import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: LoginComponent
+  },
+  {
     path: 'login',
     component: LoginComponent
   },
@@ -12,10 +16,6 @@ const routes: Routes = [
     path: 'customers',
     canLoad: [AuthGuard],
     loadChildren: 'app/customers/customers.module#CustomersModule'
-  },
-  {
-    path: '',
-    component: LoginComponent
   },
   {
     path: '**',
