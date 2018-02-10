@@ -1,0 +1,14 @@
+<p>
+  Login component
+</p>
+
+<p>
+  You are logged in: {{authService.isLogged}}
+</p>
+
+<button (click)="authService.isLogged = true;">LOG IN</button>
+
+<p>
+  go to customers url
+  <a routerLink="/customers" >/customers</a>
+</p>
